@@ -5,38 +5,298 @@
   <body>
     
     <!-- Donald Tran -->
-    <h1> Hello Yup Yup! </h1>
-    <img src="https://media0ch-a.akamaihd.net/26/15/dee141146f93984daf47757c9f92b9d7.jpeg" />
-    <img src="https://i.redd.it/w107n5l0iey01.jpg" />
-    <img src="https://pm1.narvii.com/6876/103abbe0891d2067c751f6e5501482628838ccbcr1-1280-720v2_hq.jpg" />
-    <img src="https://i.imgur.com/J5ZPwQi.jpg" />
-    <img src="https://pm1.narvii.com/7038/333c526fa54e7e52d00a6f870976bd2c1970cabar1-1200-675v2_hq.jpg" />
-    <img src="https://i.chzbgr.com/full/9152632064/h306E306F/" />
-    <img src="https://i.kym-cdn.com/photos/images/original/001/287/111/cd0.jpg" />
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfRanJhvJ1wuTaNG8dM1W3zsaNbfqhkNEAt0ni1bhVQxjswZsSiQ" />
-    <img src="https://i.redd.it/qvqwzocm0gk01.jpg" />
-    <img src="https://66.media.tumblr.com/9a51ab6cf3be91d008b013a9e84722b6/tumblr_p2k7pnaPLa1sg5u7ko1_400.png" />
-    <img src="https://pics.me.me/random-person-i-love-deep-fried-memes-me-shows-person-37546834.png" />
-    <img src="https://i.imgur.com/i23v3L1.jpg" />
-    <img src="https://i.chzbgr.com/full/9152632064/h306E306F/" />
-    <img src="https://66.media.tumblr.com/0c7f6014aa3683095c6f14c0e41ba0ad/tumblr_p47wmu8e3P1w1x3muo1_500.jpg" />
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWHHRyjflrJOzhCp4llfCzcvaliYP8EbHWOEI6KD0h5uEHmIw90w" />
-    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/74e193fc-3294-47ac-b745-5fae71153dfe/dchgdgh-e3d8418c-3f53-4db4-841b-52b4353e6f62.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzc0ZTE5M2ZjLTMyOTQtNDdhYy1iNzQ1LTVmYWU3MTE1M2RmZVwvZGNoZ2RnaC1lM2Q4NDE4Yy0zZjUzLTRkYjQtODQxYi01MmI0MzUzZTZmNjIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.oqXYMeJEo-En5Y7-c4kkZKiFY1YDsHEHSyUugrlzoCs" />
+    <div>
+      <h1> Hello Yup Yup! </h1>
+      <div>
+        <style>
+          body {
+            background: #c58989;
+            margin: 0;
+          }
+
+          .table {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+          }
+
+          .plate {
+            position: relative;
+            width: 30em;
+            max-width: 80vmin;
+            height: 30em;
+            max-height: 80vmin;
+            top: 2vmin;
+            overflow: hidden;
+            background-color: white;
+            border-radius: 50%;
+            transform: rotateX(-45deg);
+            box-shadow: -10px 10px 5px grey;
+          }
+
+          .plate-inner {
+            position: relative;
+            border: 10px dotted #d6eff1;
+            width: 80%;
+            height: 80%;
+            border-radius: 50%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: inset 10px -2px 5px 10px #e8e3e3;
+          }
+
+          .toast-shadow {
+            z-index: 1;
+            position: absolute;
+            top: 16vmin;
+            left: 8vmin;
+            height: 20em;
+            max-height: 66vmin;
+            width: 20em;
+            max-width: 66vmin;
+            background: linear-gradient(45deg, #f3c4a247, #bf8256);
+            border-radius: 20% 22% 13% 11%;
+            transform: rotateX(-45deg);
+            animation-duration: 3s;
+            animation-name: floatytoastshadow;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+          }
+
+          @keyframes floatytoast {
+            50% {
+              transform: rotateX(-45deg) rotateY(-15deg) translate(-5em, -5rem);
+            }
+          }
+          @keyframes floatytoastshadow {
+            50% {
+              transform: rotateX(-25deg) translate(-5rem, -5rem);
+              opacity: 0.1;
+              top: 9rem;
+            }
+          }
+          .toast {
+            position: absolute;
+            overflow: hidden;
+            height: 20em;
+            max-height: 66vmin;
+            width: 20em;
+            max-width: 66vmin;
+            background: linear-gradient(45deg, #bf8256, #bf8256);
+            border-radius: 20% 22% 13% 11%;
+            border: 4px solid #bf8256;
+            transform: rotateX(-45deg);
+            animation-duration: 3s;
+            animation-name: floatytoast;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+          }
+
+          .toast-inner {
+            position: relative;
+            height: 20em;
+            max-height: 66vmin;
+            width: 20em;
+            max-width: 66vmin;
+            background: #ffe4d0;
+            border-radius: 20% 22% 15% 12%;
+            border: 4px solid #bf8256;
+            box-shadow: inset 0 0 40px 10px #bf8256;
+            top: -4em;
+            left: -4px;
+          }
+
+          .egg-shadow {
+            z-index: 1;
+            position: absolute;
+            width: 15em;
+            top: 0rem;
+            left: 3rem;
+            height: 20em;
+            background: linear-gradient(45deg, #f3c4a247, #bf8256);
+            border-radius: 65% 99% 77% 90%;
+            transform: rotateX(-65deg);
+            animation-duration: 3s;
+            animation-name: floatyeggshadow;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            background-blend-mode: multiply;
+          }
+
+          @keyframes floatyeggshadow {
+            50% {
+              transform: rotateX(-35deg) translate(10rem, -10rem);
+              opacity: 0.1;
+            }
+          }
+          @keyframes floatyegg {
+            50% {
+              transform: rotateX(-35deg) rotate(-35deg) translate(15rem, -10rem);
+            }
+          }
+          .egg {
+            position: absolute;
+            z-index: 1;
+            transform: rotateX(-35deg) translate(1rem, -3rem);
+            animation-duration: 3s;
+            animation-name: floatyegg;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+          }
+
+          .eggwhite {
+            width: 15em;
+            max-width: 50vmin;
+            height: 8em;
+            max-height: 40vmin;
+            background: linear-gradient(45deg, #fff6d6, #fff);
+            border-radius: 65% 99% 77% 90%;
+            box-shadow: -5px 5px 1px #e6dcb8;
+          }
+
+          .eggyolk {
+            position: relative;
+            width: 5.5em;
+            max-width: 30vmin;
+            height: 5.5em;
+            max-height: 30vmin;
+            border-radius: 80%;
+            background: radial-gradient(closest-side at 60% 45%, #f9c91a, #f9a01a);
+            position: relative;
+            top: 50%;
+            left: 55%;
+            transform: translate(-50%, -65%) rotateX(-35deg);
+            box-shadow: -5px 5px 1px #e0cf92;
+            animation-duration: 3s;
+            animation-name: shiny;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+          }
+
+          @keyframes shiny {
+            50% {
+              transform: rotateX(-35deg) rotate(-35deg) translate(1rem, -4rem);
+            }
+          }
+        </style>
+        <div class="table">
+          <div class="plate">
+            <div class="plate-inner"></div>
+            <div class="toast-shadow"></div>
+          </div>
+          <div class="toast">
+            <div class="toast-inner">
+              <div class="egg-shadow"></div>
+            </div>
+          </div>
+          <div class="egg">
+            <div class="eggwhite">
+              <div class="eggyolk"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="https://media0ch-a.akamaihd.net/26/15/dee141146f93984daf47757c9f92b9d7.jpeg" />
+      <img src="https://i.redd.it/w107n5l0iey01.jpg" />
+      <img src="https://pm1.narvii.com/6876/103abbe0891d2067c751f6e5501482628838ccbcr1-1280-720v2_hq.jpg" />
+      <img src="https://i.imgur.com/J5ZPwQi.jpg" />
+      <img src="https://pm1.narvii.com/7038/333c526fa54e7e52d00a6f870976bd2c1970cabar1-1200-675v2_hq.jpg" />
+      <img src="https://i.chzbgr.com/full/9152632064/h306E306F/" />
+      <img src="https://i.kym-cdn.com/photos/images/original/001/287/111/cd0.jpg" />
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfRanJhvJ1wuTaNG8dM1W3zsaNbfqhkNEAt0ni1bhVQxjswZsSiQ" />
+      <img src="https://i.redd.it/qvqwzocm0gk01.jpg" />
+      <img src="https://66.media.tumblr.com/9a51ab6cf3be91d008b013a9e84722b6/tumblr_p2k7pnaPLa1sg5u7ko1_400.png" />
+      <img src="https://pics.me.me/random-person-i-love-deep-fried-memes-me-shows-person-37546834.png" />
+      <img src="https://i.imgur.com/i23v3L1.jpg" />
+      <img src="https://i.chzbgr.com/full/9152632064/h306E306F/" />
+      <img src="https://66.media.tumblr.com/0c7f6014aa3683095c6f14c0e41ba0ad/tumblr_p47wmu8e3P1w1x3muo1_500.jpg" />
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWHHRyjflrJOzhCp4llfCzcvaliYP8EbHWOEI6KD0h5uEHmIw90w" />
+      <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/74e193fc-3294-47ac-b745-5fae71153dfe/dchgdgh-e3d8418c-3f53-4db4-841b-52b4353e6f62.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzc0ZTE5M2ZjLTMyOTQtNDdhYy1iNzQ1LTVmYWU3MTE1M2RmZVwvZGNoZ2RnaC1lM2Q4NDE4Yy0zZjUzLTRkYjQtODQxYi01MmI0MzUzZTZmNjIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.oqXYMeJEo-En5Y7-c4kkZKiFY1YDsHEHSyUugrlzoCs" />
+    </div>
+    
     
     <!-- Annie Ngo --> 
-    <h1> Hello My Fellow Subjects </h1>
-    <!-- the h1 style code allowed me to change the color of the text -->
-    <h1 style="color: GhostWhite;">Hello My Fellow Subjects</h1>
+    <h1> hello my fellow subjects </h1>
     <img src="https://i.imgur.com/gK0gsGp.jpg" />
     <!-- by adding in the <style> you can change the style or the color of whatever you are changing, in this case i am changing the color of the background -->
     <style>
       body {background-color: blue;}
+      h1 {color: white;}
     </style>
-   
+    </head>
     
     <!-- Sarah Helsel --> 
   <img src="https://mbtimetraveler.files.wordpress.com/2015/09/021-dog-memes.jpg"/>
   <!--Allows you to add images from the internet--> 
   <img src="https://heavyeditorial.files.wordpress.com/2014/03/stoner-dog-10-dog-meme-41.jpg?quality=65&strip=all&w=640"/>
-</body>
+<style>
+  body {
+  background-color: #E1DFDE;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+svg {
+  display: block;
+  width: 75vw;
+  margin: auto;
+}
+
+:root {
+  cursor: url(http://chrishawkins.us/blank.cur), none;
+}
+
+.custom-cursor {
+  position: absolute;
+  cursor: none;
+}
+
+#dragon-dark {fill: #242128;} 
+#dragon-front {fill: #242128;} 
+#legs-shadow {fill: #B4B2B2;} 
+#legs {fill: #4B4748;} 
+#dragon-light {fill: #342F38;} 
+#dragon-eye {fill: #EA4102;} 
+#hair {fill: #F1EDE4;} 
+#body {fill: #D3BCAE;} 
+#dress-back {fill: #38718B;} 
+#dress{fill:#336782;}
+
+#deviceOrientation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  @media only screen and (max-width: 768px) {
+    display: block;
+  }
+}
+  </style>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <path id="dragon-dark" d="M471.5 449.2l-1.3-.7-94.2-52-16-20.5 2-20 12.2-17 27.3-3 11.9 23.4 18.4-10.4 26.4-40.2L492 224l6-102.2-12.5 57.7-29 35-23.5 4.7 6.5-8.4-8.5 1.2-2-12 16 1.8-16-5.8v-14l20.5 1.8-11.7-3.3-11-6.5-2.6-13.8 22-1.7 12 2.7-13.7-6-20.7.8-7-9.8 20-6.4-23.8 2.4-14.6-2.2 10.6-7.2-15.5 1.7 22.5-23.3-25.8 16.6-28.7 9 30-39.8-37.7 42.5-15.3 7.3 23.7-37.3-34.2 42.3-20.7 17.7 14.7-30.3 11.2-17.2 17-16.8-15.7 8-12.3 15.3-.4 5.5-24.6 44.2 11.8-30.7-1.7-18-1.5 18.7-19 44V170l10.4-33 2.6-19.8-20.8 46-5.5 7 1.5 16.6-4.2 18-7.3 5.4V167l-7.5 22.5 1.8 15-13 35.3 1.2 7.7-5.8 5.3-5 22.4-12.4 15.6 5.2 17.4 6-5.4 8.8 4.4 8.4-3.7 10-.3-3.2-5.4 21.2-41.3 15.6-4.5 14.2-25.8 6.2.8 5 3.8-4.7-6.3-5.3-2.3 1.3-1.7 12-.5 10 7.2 12 13.8-13-18-12.7-7.8 22.2-2.4 18.4 5.4-16.9-9.2-27.2 1.1 12-10.8 22.7-4.2 28.7 11 4.3 10.2-17.2 43.5-57.3 62.2-10.5 61.8 25.2 65.4z"/>
+  <path id="dragon-light" d="M533.7,489.3l-5-50l-12-33.7l-6.7-2l-42.7-22l-35.7,7L297,462l-39.3,9l-32.3-2.3l52-7.7l24.7-12.7l-8.3-32.7
+           l-7,2.7c0,0,3-23.8,1.3-39.1l-7,4.1c0,0,12.7-42.3,11.7-52.3H285c0,0,26-30.3,26.3-34.3H299c0,0,38.3-19,51.2-34.8h-6.7l21.8-13.2
+           l9-12H369l8.7-16l-4-8.7l-2,3.7l-10.3-12.3l-8.7-2.3l1,2l-16-0.7l-17,4.7l-5.7,5.3l2.7-11.3l5.7-5.7l0.3,3l23.7-13.8l0.8,2.8
+           l13.8-1.2l18.3,9.2l-0.2,3.2l7,8.3l-3.5,50.2l-62,67.3l-4.3,41l-3,1.7l3.2,33.2l2-2l14.3,27.5l62-45.5l21.2-25.1l13.4-8.8L451,312
+           l36.5-93.8l12.2-135.5L542,179l29.3,78.7l-13.6,127.1l-12.5,93L533.7,489.3z"/>
+  <path id="dragon-eye" d="M264.5 231.5l-6.3 5.5-1.2 6.6-3.9 8.8 7.7-5.8.4-5.6z"/>
+  <path id="legs-shadow" d="M475.8 470.8l-18.1 6.4-83-1.4-35.5 1.4-15.2-3.5 44.3-2.9z"/>
+  <path id="legs" d="M370.7 436.5v10.8l-3.5 21.5-14.2 3.3-2.2-1.5-1.5.2 2 2.8h19.3l5-24.7s5.3-4.2 5.7-12.5h-10.6zM434.8 473.7v-3.4L421.5 431l6.7-2.3 10.1 40 13.9 3.5 3.1-1.7v3.2z"/>
+  <path id="hair" d="M307.3 386.2c1 .5 13.8 7.3 13.8 7.3l15-27-8.8-22.2 6.8-21 44.3-32.7 10 11.7-1.7 6-6.2 6.2 3.2 10 .5-9.5 5.3-4.3 4-8.5 17.5-1.3 4.3 2.8v9.2l-2.5 4.7s1 8.3 6.5 12.7c0 0-1.8-1-2.5-10.5l2.5-4V308l-4.8-14-3-30.8 3-3.3v-6l3.7-4.2-.7-11.8-4-3.2.2-9.5-3.7-2-5 .8-3.2-5.7-20 7.8.5 6.4-3.2 4.3 1.7 5.7-13.2 22.5-14.5 12.3-22.8 12.5h-7.7l-3.5 10.3v10.7l5.5-16 28.5-12-26.7 29.5-6 43.3 10 16.3-10.4 12.8-12.7 1.5z"/>
+  <path id="body" d="M396.3 274.5l-19.2 3.8-2.3 6.3 1.3 8.7-5.7 28.2-6.3 4.7-11.1 24.4-4.2 3.9-5.3 11.5 1.4 8.1 3.8 4.8s.7 1 1.5 0-1.2-3.6-1.2-3.6l-1.4-1.8-.1-2.9s2.9 4.8 4 3.9 1.6-1.8.8-3.1-3.8-4-3.8-4l-.3-4.4 3.2-2.4 1.3.8.3 5.3s.2 1.6 1.5 1.6 1.7-1.5 1.7-1.5v-7l-1.5-2-.1-4.5 11.8-15.2 6.5-4.2 10.1-41.1 14.4 18.6h9.8l13.2-24.7 2.3 17.5v9.2l6.5 11.7v8.8s14.3 20.3 13.5 22-4 3-4.5 3.8.1 5.1-.9 5.5-.1 2.2.6 1.9 3.2-4.2 3.9-5.8 1.8-1.8 2.6-.4 3.1 3.9 3.1 3.9v4.8s-2 2.2-3.8 2.8c-1.8.5-1 2.1.2 1.9 1.2-.2 3.7-2 3.7-2l.5.2-.5 1.3s-3 2.2-2.9 2.8c.1.5 1.8.7 2.8-.2 1-.8 3-3 2.8-5.1 0 0 .8 1 .8 1.3-.1.3-.3 6.1 1.5 6 1.8-.1.3-11.3.3-11.3l-3.6-4.6-1.2-6.2-3.1-2.8-7.7-26.5s-8.8-2.2-11.1-49l-3.9-6-18.5 1-.8-8.1 6.6-6.8.2-11.9-5.6-14.1-4.2 3-2.5-3-3.1.6-7.8 9.4.5 13.5 3 6 4.6 2.8 1.6 9.9z"/>
+  <path id="dress-back" d="M412,333.3c0,0,15.8,88,28.8,100.2l-27.5,4.5l-37.8-19.3l22.9-92.3L412,333.3z"/>
+  <path d="M420.3 354.2s-28.5 59.8-31 84.2l-19.7 1-19.5-6.7 10.7-6 12-31 8.5-48 .2-14 13.7-16V310L383 294.2l-.3-4.3-6.5-8-4.2-9.3 8.3 2.7 12.8-.3-1.3 12.8 9.3 15 10.7-16.5-2.8-13.7 17.8-10.7v7.5s-7.3 8.5-6.7 23.5c0 0-7.7 8.8-10.2 18.5l6 37.7 4.4 5.1z" id="dress"/>
+  <path id="dragon-front" d="M228 511.3l83-5 76-30.7 67.7-84.7 76-133-6.7-78.7-56.7-135 27.3 22 41 42 44.7 149-2.3 30.3 2.3 55s-32 117.3-31.7 135L537 504l-5 28.3-4.7-42.7 15.3-19.3 9-92.3-29 30.3-57.3 120.3-38.3 3.7-43.3 1.7 56-13 37.3-40.3 56-114.3-52.3 34-79 75.7-50.7 38.2-29-2.3-37 5.7-57-6.4z"/>
+</svg>
+
+<div class="custom-cursor">
+  <svg>
+    <path fill="#1A1A1A" d="M153.7,166.6c0,0-7.3-22.3-14.4-28.4v15.4c0,0-4.5-13.9-10.6-17.3l-3.8-8.5l-1.6,4.8l-2.1-3.5l-2.4,6.8l-3.1-5.9c0,0-4.5,4-5.5,8.8c0,0-2.8-2.8-2.4-5.2c0,0-8.1,9.9-8,15.2l-4.7-11.6l-7.6,8.8l-0.9-4.5l-5,5.5l-6.2-1L61,150.7l8.7-10.4l-34.5,15.1l7.6-9.9l22.5-10.7l-43.8,9.9l8.3-6.6c0,0,21.3-7.3,20.6-7.3c-0.7,0-27.9-0.5-27.9-0.5l13.5-5.9h20.1l13.7-2.4l-15.9-3.8l20.1-1.4l5-6.2l19.9-4.2l-0.3-2.1h-3.3c0,0-1.6-5.7-10.4-1.4c0,0,2.1-5.4,9.9-6.2c0,0-0.3-2.9,2.6-3.8l1.7-3.1c0,0,5.9-0.5,14,5.9L126.8,79l11.1-6.2c0,0,2.3-10.4,4.5-11.8l1.2,6.1l6.4-19l0.9,9.7l5.2-15.2l9.9-8.1l-9.9,21.3l9.9-13.7l12.5-8.5l-6.6,13l-14,16.8l17.5-11.1l-5,8.1l-8.5,8.7l12.5-4.2c0,0-5,7.8-5,15.2l-12.6,5v1.9c0,0,8.8,1.7,13.7,5.2L154.9,93c0,0,6.4,2.8,9.7,6.2h-13.9c0,0,2.9,4.5,6.6,5c3.6,0.5,5.2,2.9,5.2,2.9l-16.6-1.9l6.2,6.1l-10.7,1.4l2.6,2.8c0,0-3.6-0.3-6.8,0.7l11.6,6.6l0.5,2.9l18.4,6.9l-17-1.6l2.6,2.9l16.6,5.4l-14.2,0.2l2.1,4.7l-8.5-4.7C149.4,139.6,155.2,157.6,153.7,166.6z"/>
+  </svg>
+</div>
+
+<div id="deviceOrientation"></div>
+  </body>
     </html>
