@@ -10,7 +10,6 @@ p {
   font-size: x-large;
 }
 
-
 /* ~ This is Toast CSS ~ */
 .table {
   display: flex;
@@ -226,7 +225,9 @@ svg {
   fill: #f1ede4;
 }
 
-
+#body {
+  fill: peachpuff;
+}
 
 #dress-back {
   fill: #38718b;
