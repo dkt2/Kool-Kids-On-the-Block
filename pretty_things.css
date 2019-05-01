@@ -3,6 +3,13 @@ body {
   margin: 0;
 }
 
+p {
+  color: green;
+  font-style: italic;
+  font-family: Helvetica;
+}
+
+
 /* ~ This is Toast CSS ~ */
 .table {
   display: flex;
@@ -173,11 +180,7 @@ body {
 
 /* ~ This is Toast CSS ~ END ~ */
 
-body {
-  background-color: #e1dfde;
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
+
 
 /* ~ This is Dragon Lady CSS ~ */
 
@@ -224,9 +227,7 @@ svg {
   fill: #f1ede4;
 }
 
-#body {
-  fill: #d3bcae;
-}
+
 
 #dress-back {
   fill: #38718b;
