@@ -4,7 +4,7 @@ body {
 }
 
 p {
-  color: green;
+  color: blue;
   font-style: italic;
   font-family: Helvetica;
   font-size: x-large;
@@ -188,13 +188,13 @@ svg {
   margin: auto;
 }
 
-:root {
+/* :root {
   cursor: url(http://chrishawkins.us/blank.cur), none;
-}
+} */
 
 .custom-cursor {
   position: absolute;
-  cursor: none;
+  /* cursor: none; */
 }
 
 #dragon-dark {
